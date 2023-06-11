@@ -1,0 +1,19 @@
+<h1> Hello World</h1>
+
+<p> This is the first webpage.</p>
+
+<p>Spelt out list uisng for loop:</p>
+{% for item in list %}
+    {{ item }} </br>
+{% endfor %}
+
+<p>First item in list using idexing:</p>
+{{ list.0 }} </br>
+
+<p>Third item in list using if statment:</p>
+
+{% for item in list %}
+    {% if item == list.2 %}
+        {{ item }} </br>
+    {% endif %}
+{% endfor %}
